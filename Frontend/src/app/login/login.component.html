@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="title">
+      <h1 style="color:whitesmoke">Employee Management System</h1>  
+  </div>
+    
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav d-flex flex-row">
+      <li class="nav-item">
+        <h5><a class="nav-link" routerLink="/login">Login</a></h5>
+      </li>
+    </ul>
+  </div>
+      <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Login</h1>
+                    <h6>Please enter mail & password !!</h6>
+                </div>
+                  
+                    <form [formGroup]="formData" (ngSubmit)="onClickSubmit(formData.value)" >
+                      
+                        <div class="mb-3">
+                          <label for="exampleInputEmail" class="form-label">User Name</label>
+                          <input type="email" placeholder="User"  class="form-control" id="exampleInputEmail"  aria-describedby="emailHelp" required autofocus>
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      <!--formControlName="username"  | formControlName="password1"-->
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword" class="form-label">Password</label>
+                          <input type="password" placeholder="Password"  class="form-control" id="exampleInputPassword" required>
+                           
+                        </div> 
+                        
+                        <button type="submit" class="btn btn-primary mb-2" routerLink="/employee-list">Login</button>
+                      </form>
+                        </div>    
+                </div>
+            </div>
+        </div>    
+      

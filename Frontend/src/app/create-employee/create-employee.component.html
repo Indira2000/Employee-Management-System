@@ -1,0 +1,65 @@
+<div class="background-image1" style="background-image: url('/assets/Image-4.jpg');">
+<div class="col-md-6 offset-md-3">
+   
+    <div class="card">
+                <div class="text-center">
+                    <h3>Employee Detail</h3>
+                    <h6>Please Fill the Details !!</h6>
+                </div>
+
+<form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+        <label>First Name</label>
+        <input type="text" class="form-control" id="Firstname" pattern="\d*" placeholder="First Name" required
+        [(ngModel)]= "employee.firstname" name="Firstname">
+        <span style="color:rgb(218, 46, 46)" >*Mandatory</span>
+    </div>
+
+    <div class="form-group">
+    <label>Last Name</label>
+        <input type="text" class="form-control" id="Lastname" pattern="\d*" placeholder="Last Name" required
+        [(ngModel)]= "employee.lastname" name="Lastname">
+        <span style="color:rgb(218, 46, 46)">*Mandatory</span>
+    </div>
+
+    <div class="form-group">
+    <label>Email Id</label>
+        <input type="text" class="form-control" id="emailId" pattern="\d*" placeholder="Email Id" required
+        [(ngModel)]= "employee.emailId" name="emailId">
+        <span style="color:rgb(218, 46, 46)">*Mandatory</span>
+    </div>
+
+    <div class="form-group">
+    <label>Employee Id</label>
+        <input type="text" class="form-control" id="empId" pattern="\d*" placeholder="Employee Id" required
+        [(ngModel)]= "employee.empId" name="empId">
+        <span style="color:rgb(218, 46, 46)">*Mandatory</span>
+    </div>
+
+    <div class="form-group">
+    <label>Department</label>
+    <select name="selMode" [(ngModel)]= "employee.department" name="Department">
+        
+        <option value="Administrator"> Administrator </option>
+        <option value="Team Lead"> Team Lead </option>
+        <option value="Technical Support"> Technical Support </option>
+        <option value="Developer"> Developer </option>
+        <option value="Testing"> Testing </option>
+        <option value="Requirement Specialist"> Requirement Specialist </option>
+        <option value="Product Specialist "> Product Specialist </option>
+        <option value="Manager"> Manager </option>
+        </select>
+        <span style="color:rgb(218, 46, 46)">*Mandatory</span>
+    </div>
+
+    <ul class="navbar-nav d-flex flex-row">
+        <li class="nav-item">
+    <button class="btn btn-success" type="submit" >Submit</button>&nbsp; &nbsp;
+    <button type="submit" class="btn btn-primary" routerLink="/employees" >Cancel</button>
+        </li>
+    </ul>
+    
+</form>
+</div>
+</div>

@@ -1,0 +1,20 @@
+.card{
+    top: -300px;
+    border:none;
+    width: 100vh;
+    padding: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,50%);
+    background: linear-gradient(90deg,rgb(14, 36, 53) 0%, rgb(6, 6, 58)100%);
+}
+.card h3,h6{
+    color: #fff;
+}
+label{
+    color:#fff;
+}
+select{
+    padding: 5px;
+    width: 85vh;
+}

@@ -1,0 +1,51 @@
+th,td{
+    border-spacing: 15px;
+}
+th{
+    color:white;
+}
+tbody{
+    color:white;
+}
+h3{
+    color:white;
+}
+h5{
+  color:white;
+}
+.card{
+/* border-bottom: 50px;*/
+  top: -150px;
+  border:none;
+  width: 1000px;
+  padding: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,50%);
+  background: linear-gradient(90deg,rgb(14, 36, 53) 0%, rgb(6, 6, 58)100%);
+}
+  
+  .icon-bar a {
+    float: left; 
+    text-align: center; 
+    width: 50%;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: rgb(9, 13, 68); 
+    font-size: 36px; 
+  }
+  
+  /*
+  .icon-bar {
+    overflow: auto; 
+  }
+
+  .icon-bar a:hover {
+    background-color: rgb(8, 60, 95); 
+  }
+  
+  .active {
+    background-color: red; 
+  }*/
+  
+  

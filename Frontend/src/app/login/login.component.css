@@ -1,0 +1,32 @@
+.card{
+    top: -125px;
+    border:none;
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    left: 100%;
+    transform: translate(-50%,50%);
+    background: linear-gradient(90deg,rgb(27, 70, 8) 0%, rgb(107, 47, 8)100%);
+}
+.title h1{
+    text-align: center;
+    font-size: 65px;
+    line-height: 75px;
+    color: transparent;
+    -webkit-text-stroke: 3px rgb(53, 90, 97);
+
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.card h1,h6{
+    color: #fff;
+}
+label{
+    color:#fff;
+}

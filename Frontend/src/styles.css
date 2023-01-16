@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.style{
+    margin: 0;
+    padding: 0;
+}
+.background-image{
+    background-image: url('~assets/Image-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.background-image1{
+    background-image: url('~assets/Image-4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150vh;
+}
+
+
+table, th, td {
+    border: 1px solid black;
+   /*border-collapse: collapse;*/
+    border-color:skyblue;
+    background-color: skyblue cellpadding=5;
+    border-style:inset;
+  }

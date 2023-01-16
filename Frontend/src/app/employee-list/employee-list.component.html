@@ -1,0 +1,42 @@
+<div class="background-image" style="background-image: url('/assets/Image-4.jpg');">
+<div class="card">
+    <div class="text-center">
+        <h3> Employee List</h3>
+    </div>
+<ul class="navbar-nav d-flex flex-row">
+    <li class="nav-item">
+        <button type="submit" class="btn btn-primary mb-2" routerLink="/create-employee" >Add Employees</button>&nbsp;&nbsp; 
+        <button type="submit" class="btn btn-primary mb-2" routerLink="/login" >Logout</button><br>
+    </li>
+</ul>
+
+<table class = "table table-striped" border="3">
+    <thead>  
+            <th> First Name</th>
+            <th> Last Name </th>
+            <th> Email Id</th>
+            <th>Employee Id</th>
+            <th>Department</th>
+            <th> Actions </th>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let employee of employees" >
+            <td> <h5>{{ employee.firstname }}</h5> </td>
+            <td> <h5>{{ employee.lastname }}</h5> </td>
+            <td> <h5>{{ employee.emailId }}</h5> </td>
+            <td> <h5>{{ employee.empId }}</h5> </td>
+            <td> <h5>{{ employee.department }}</h5> </td>
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="icon-bar">
+          <td>
+            <button (click) = "updateEmployee(employee.id)"><i class="fa fa-edit "></i></button>&nbsp;
+            <button (click) = "deleteEmployee(employee.id)"><i class="fa fa-trash "></i></button>&nbsp;
+            <!--  <button (click) = "employeeDetails(employee.id)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+            fa-pulse fa-spin fa-2x--> </td>
+        </div>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>
